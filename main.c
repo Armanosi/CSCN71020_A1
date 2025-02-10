@@ -5,7 +5,7 @@ void printOptions();
 void add();
 
 
-void main() {
+int main(void) {
 
 	printWelcomeMenu();
 
@@ -14,14 +14,15 @@ void main() {
 	int inputNum;
 
 	printf("Enter operation number: ");
-	scanf_s("%1o", &inputNum);
+	scanf_s("%d", &inputNum);
 
 	switch (inputNum)
 	{
 	case 1:
 		add();
+		break;
 	}
-
+	return 0;
 }
 
 void printWelcomeMenu() {
@@ -42,8 +43,6 @@ void add() {
 	scanf_s("%lf", &num1);
 	printf("Enter the second value:");
 	scanf_s("%lf", &num2);
-	result = num1 + num2;
-	printf("%lf + %lf = %lf\n", num1, num2, result);
+	result = num1 - num2;
+	printf("%lf - %lf = %lf\n", num1, num2, result);
 }
-
-lsadhjflkjasdlfa
